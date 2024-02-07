@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Astro Project"
-  content: "Astroplate is a free starter template built with Astro and TailwindCSS, providing everything you need to jumpstart your Astro project and save valuable time."
+  title: "Localisation platform build for product growth"
+  content: "The localisation platform helps your product or service to be adopt by all audience without any hassle. providing a good experience in their language."
   image: "/images/banner.png"
   button:
     enable: true
@@ -11,16 +11,14 @@ banner:
 
 # Features
 features:
-  - title: "What's Included in Astroplate"
+  - title: "Manage your product copies"
     image: "/images/service-1.png"
-    content: "Astroplate is a comprehensive starter template that includes everything you need to get started with your Astro project. What's Included in Astroplate"
+    content: "A product copies editor is crucial for maintaining content quality, consistency, and effectiveness. They are a key part of the content production process, playing a critical role in enhancing customer engagement and satisfaction"
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Astro and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "Use a visual editor for easy management of product copies—add, edit, update, and delete keys effortlessly for a dynamic and responsive experience."
+      - "AI Translation - Leverage artificial intelligence for the translation of product copies, enhancing the process with advanced contextual understanding for more accurate and nuanced language adaptation."
+      - "Download - Users have the option to selectively download content from a designated language column as required or to download all language files collectively as a single zip file."
+      - "CDN Support - Implement a systematic approach to build and deploy localized content onto a Content Delivery Network (CDN), enabling direct integration into your product for enhanced global user experiences."
     button:
       enable: false
       label: "Get Started Now"
