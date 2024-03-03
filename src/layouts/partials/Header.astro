@@ -25,9 +25,17 @@ const { pathname } = Astro.url;
 <header class={`header z-30 ${settings.sticky_header && "sticky top-0"}`}>
   <nav class="navbar container">
     <!-- logo -->
-    <div class="order-0">
-      <Logo />
-    </div>
+    <a href="/" class="flex order-0 nav-link active text-h3 lg:text-h4 items-center">
+      <span style={{marginRight:'12px'}}>  <img
+        src={"/images/logo.svg"}
+        width="30"
+        height="30"
+        decoding="async"
+        loading="lazy"
+        alt="A description of my image."
+      /></span>
+      <span>transmate.io</span>
+      </a>
     <!-- navbar toggler -->
     <input id="nav-toggle" type="checkbox" class="hidden" />
     <label

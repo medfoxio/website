@@ -28,8 +28,8 @@ const { banner, features }: Homepage = homepage.data;
   <!-- Banner -->
   <section class="section pt-14">
     <div class="container">
-      <div class="row justify-center">
-        <div class="lg:col-7 md:col-9 mb-8 text-center">
+      <div class="flex items-center concontainer">
+        <div class="lg:col-7 md:col-9 mb-8">
           <h1
             set:html={markdownify(banner.title)}
             class="mb-4 text-h3 lg:text-h1"
@@ -52,11 +52,11 @@ const { banner, features }: Homepage = homepage.data;
         </div>
         {
           banner.image && (
-            <div class="col-12">
+            <div class="">
               <ImageMod
                 src={banner.image}
-                height={380}
-                width={1200}
+                height={300}
+                width={600}
                 alt="banner"
                 format="webp"
               />
@@ -64,6 +64,15 @@ const { banner, features }: Homepage = homepage.data;
           )
         }
       </div>
+      <!-- <div>
+        <ImageMod
+          style={{top:'24px',position:'relative'}}
+          src={"/images/editor.png"}
+          height={600}
+          width={1200}
+          alt="banner"
+        />
+      </div> -->
     </div>
   </section>
   <!-- /Banner -->
@@ -71,18 +80,19 @@ const { banner, features }: Homepage = homepage.data;
   <!-- Features -->
   {
     features.map((feature, index: number) => (
-      <section class={`section-sm ${index % 2 === 0 && "bg-gradient"}`}>
+      <section class={`section-sm ${index % 2 === 0 && ""}`}>
         <div class="container">
-          <div class="row items-center justify-between">
+          <div class="row items-center justify-between flex">
             <div
               class={`mb:md-0 mb-6 md:col-5 ${index % 2 !== 0 && "md:order-2"}`}
             >
-              <ImageMod
+              <img
                 src={feature.image}
-                height={480}
-                width={520}
-                alt={feature.title}
-                format="webp"
+                width="1000"
+                height="1000"
+                decoding="async"
+                loading="lazy"
+                alt="A description of my image."
               />
             </div>
             <div class={`md:col-7 lg:col-6 ${index % 2 !== 0 && "md:order-1"}`}>

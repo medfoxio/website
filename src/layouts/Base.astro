@@ -61,6 +61,25 @@ const { title, meta_title, description, image, noindex, canonical } =
     />
     <meta name="generator" content={Astro.generator} />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://cookiechimp.com/widget/XeEtzB.js"></script>
+
+    <script>
+      (function (d, t) {
+        var BASE_URL = "https://app.chatwoot.com";
+        var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        g.src = BASE_URL + "/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g, s);
+        g.onload = function () {
+          window.chatwootSDK.run({
+            websiteToken: "SPQUqFc7h43dynUNMQjN6CQP",
+            baseUrl: BASE_URL,
+          });
+        };
+      })(document, "script");
+    </script>
 
     <!-- google font css -->
     <AstroFont
@@ -72,7 +91,7 @@ const { title, meta_title, description, image, noindex, canonical } =
           name: fontPrimary!,
           fallback: "sans-serif",
           cssVariable: "font-primary",
-          googleFontsURL: `https://fonts.googleapis.com/css2?family=${pf}&display=swap`,
+          googleFontsURL: `https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap`,
         },
         {
           src: [],
@@ -81,7 +100,7 @@ const { title, meta_title, description, image, noindex, canonical } =
           name: fontSecondary!,
           fallback: "sans-serif",
           cssVariable: "font-secondary",
-          googleFontsURL: `https://fonts.googleapis.com/css2?family=${sf}&display=swap`,
+          googleFontsURL: `https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap`,
         },
       ]}
     />

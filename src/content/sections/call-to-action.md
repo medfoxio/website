@@ -1,10 +1,10 @@
 ---
 enable: true
-title: "Ready to build your next project with Astro?"
-image: "/images/call-to-action.png"
-description: "Experience the future of web development with Astroplate and Astro. Build lightning-fast static sites with ease and flexibility."
+title: "Ready to build your localisation project with transmate.io?"
+image: "/images/call-to-action.svg"
+description: "Explore the cutting-edge features of the transMate.io platform for localizing content management. Effortlessly create lightning-fast static content with unparalleled ease and flexibility."
 button:
   enable: true
   label: "Get Started Now"
-  link: "https://github.com/zeon-studio/astroplate"
+  link: "https://app.transmate.io"
 ---

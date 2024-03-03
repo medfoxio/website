@@ -13,7 +13,17 @@ const { footer }: { footer: { name: string; url: string }[] } = menu;
   <div class="container">
     <div class="row items-center py-10">
       <div class="mb-8 text-center lg:col-3 lg:mb-0 lg:text-left">
-        <Logo />
+        <div class="order-0 nav-link block active text-h3 lg:text-h4 flex items-center">
+          <span style={{marginRight:'12px'}}>  <img
+            src={"/images/logo.svg"}
+            width="30"
+            height="30"
+            decoding="async"
+            loading="lazy"
+            alt="A description of my image."
+          /></span>
+          <span>transmate.io</span>
+        </div>
       </div>
       <div class="mb-8 text-center lg:col-6 lg:mb-0">
         <ul>
