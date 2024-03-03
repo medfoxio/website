@@ -3,16 +3,16 @@
 banner:
   title: "Localisation platform build for product growth"
   content: "The localisation platform helps your product or service to be adopt by all audience without any hassle. providing a good experience in their language."
-  image: "/images/banner.png"
+  image: "/images/banner.jpg"
   button:
     enable: true
     label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/astroplate"
+    link: "https://app.transmate.io"
 
 # Features
 features:
   - title: "Manage your product copies"
-    image: "/images/service-1.png"
+    image: "/images/service-1.svg"
     content: "A product copies editor is crucial for maintaining content quality, consistency, and effectiveness. They are a key part of the content production process, playing a critical role in enhancing customer engagement and satisfaction"
     bulletpoints:
       - "Use a visual editor for easy management of product copies—add, edit, update, and delete keys effortlessly for a dynamic and responsive experience."
@@ -24,26 +24,23 @@ features:
       label: "Get Started Now"
       link: "#"
 
-  - title: "Discover the Key Features Of Astro"
-    image: "/images/service-2.png"
-    content: "Astro is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+  - title: "Team Management"
+    image: "/images/service-2.svg"
+    content: "Oversee team members with diverse roles, including inviting customers to contribute as translators for product copies, and appointing developers and content editors to manage the content."
     bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "Transmate was created for developers - Developers can easily deploy to a Content Delivery Network (CDN) and utilize it with frontend technologies."
+      - "As a Content Editor using the transmate product, the Visual Editor empowers me by equipping me with the necessary tools and functionality to efficiently manage and optimize localized content."      
     button:
       enable: true
       label: "Get Started Now"
-      link: "https://github.com/zeon-studio/astroplate"
+      link: "https://app.transmate.io"
 
-  - title: "The Top Reasons to Choose Astro for Your Next Project"
-    image: "/images/service-3.png"
-    content: "With Astro, you can build modern and content-focused websites without sacrificing performance or ease of use."
+  - title: "Project Management"
+    image: "/images/service-3.svg"
+    content: "Empower users to efficiently manage, review, and verify content in the Kanban view through a straightforward drag-and-drop interface. Easily assign unreviewed and unverified keys to respective Translators and content editors for streamlined workflow coordination."
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Astro a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "Manage keys review status with kanban board."
+      - "Assign keys to translators and reviewers for content management."
     button:
       enable: false
       label: ""
