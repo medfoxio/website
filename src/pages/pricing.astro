@@ -1,0 +1,81 @@
+---
+// import Layout from "@layouts/Layout.astro";
+import Base from "@/layouts/Base.astro";
+import Container from "@/components/container.astro";
+import Sectionhead from "@/components/sectionhead.astro";
+import PricingCard from "@/components/pricing.astro";
+
+const pricing = [
+  {
+    name: "Single Product",
+    price: "Free",
+    popular: false,
+    features: [
+      "Single Project",
+      "Single user",
+      "2000 hosted keys",
+      "5 deployment per day",
+      "Download content",
+      "Export as JSON",
+    ],
+    button: {
+      text: "Get Started",
+      link: "/",
+    },
+  },
+  {
+    name: "Multiple Products",
+    price: {
+      monthly: "$19",
+      annual: "$16",
+      discount: "10%",
+      original: "$24",
+    },
+    popular: true,
+    features: [
+      "Multi Project",
+      "Up to 10 users",
+      "8000 hosted keys",
+      "10 deployment per day",
+      "Download and Publish to CDN",
+      "Export to Multi platform",
+    ],
+    button: {
+      text: "Coming Soon",
+      link: "#",
+    },
+  },
+  {
+    name: "Enterprise",
+    price: "Custom",
+    popular: false,
+    features: [
+      "Up to 10 Projects",
+      "Custom domain",
+      "Up to 100 users",
+      "50 deployment per day",
+      "SSO Integration",
+      "24/7 Phone Support",
+    ],
+    button: {
+      text: "Coming Soon",
+      link: "/contact",
+    },
+  },
+];
+---
+
+<Base title="Pricing">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="desc">
+        Simple & Predictable pricing. No Surprises.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="flex justify-center mt-8 mb-8">
+      {pricing.map((item) => <PricingCard plan={item} />)}
+    </div>
+  </Container>
+</Base>
