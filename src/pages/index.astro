@@ -29,7 +29,7 @@ const { banner, features }: Homepage = homepage.data;
   <section class="section pt-14">
     <div class="container">
       <div class="flex items-center concontainer">
-        <div class="lg:col-7 md:col-9 mb-8">
+        <div class="proudct-title">
           <h1
             set:html={markdownify(banner.title)}
             class="mb-4 text-h3 lg:text-h1"
@@ -52,11 +52,11 @@ const { banner, features }: Homepage = homepage.data;
         </div>
         {
           banner.image && (
-            <div class="col-8">
+            <div class="">
               <ImageMod
                 src={banner.image}
                 height={300}
-                width={900}
+                width={600}
                 alt="banner"
                 format="webp"
               />
@@ -64,15 +64,23 @@ const { banner, features }: Homepage = homepage.data;
           )
         }
       </div>
-      <!-- <div>
-        <ImageMod
+      <div class="mt-16 pt-24">
+
+        <h3 class="mb-4">
+          Break Language Barriers Effortlessly: Powered by AI Translation Technology!
+        </h3>
+        <p>
+          Join the future of global communication with Transmate.io. Embrace AI technology and unlock endless possibilities for your brand's international success. Say hello to effortless, accurate, and efficient product copy translation with transmate.io today!
+        </p>
+         <!-- <ImageMod
           style={{top:'24px',position:'relative'}}
-          src={"/images/editor.png"}
+          src={"/images/visualeditor.png"}
           height={600}
           width={1200}
           alt="banner"
-        />
-      </div> -->
+        /> -->
+        <img class="mt-8 pt-8" src="/images/visualeditor.png"/>
+      </div>
     </div>
   </section>
   <!-- /Banner -->
