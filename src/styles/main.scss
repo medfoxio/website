@@ -22,6 +22,10 @@
   width: 50%;
 }
 
+.w-80{
+  width: 20rem;
+}
+
 @media only screen and (max-width: 600px) {
   .concontainer{
     flex-direction: column;
